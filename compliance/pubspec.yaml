@@ -31,11 +31,19 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.3.4
+
+flutter_native_splash:
+  android: false #androidの時にスプラッシュ画面を表示
+  ios: true #iosの時にスプラッシュ画面を表示
+  web: true #webの時にスプラッシュ画面を表示
+  color: "#7AAF3B" #背景色の選択
+  image: "images/Compliance.png" #表示させる画像を選択
+  ios_content_mode: center #アイコンを真ん中に配置
+  # branding: "assets/images/IRIS.png" #会社のロゴを表示
 
 dev_dependencies:
   flutter_test:
@@ -60,9 +68,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - images/Compliance.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
