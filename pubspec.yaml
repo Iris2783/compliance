@@ -2,7 +2,7 @@ name: compliance
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.2 <4.0.0'
+  sdk: ">=3.0.2 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -41,7 +41,7 @@ flutter_native_splash:
   ios: true #iosの時にスプラッシュ画面を表示
   web: true #webの時にスプラッシュ画面を表示
   color: "#7AAF3B" #背景色の選択
-  image: "images/Compliance HUB.png" #表示させる画像を選択
+  image: "images/ComplianceHUB.png" #表示させる画像を選択
   ios_content_mode: center #アイコンを真ん中に配置
   # branding: "assets/images/IRIS.png" #会社のロゴを表示
 
@@ -61,7 +61,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -69,7 +68,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/Compliance HUB.png
+    - images/ComplianceHUB.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
