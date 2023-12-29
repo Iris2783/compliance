@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		Gj5mK31uGdDZ9ZIoaC+KhvSYoDc=
+		GhF+hWtGE1+4kfmHzTM+PtaHqr8=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		w+AeY8S8fTU//3feE0uN2jY0qyI=
+		qLMmeJnMBPWA6Tqjk4ySLwtdkFk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		TU39V14Ps3Q3MmQkJdkeZad8a6c=
+		BI9k8pSWX/mHnZpfNcFg+l0YGhg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		/GGsQWeq3+XyqfGql6Dvxr6lpYg=
+		bbmokY3rBVVAEdpF+RNyKDhxEYI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -80,13 +80,17 @@
 		<data>
 		8gkJpHzPeYRBa6Es0fwsjX+9agY=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/images/ComplianceHUB2.png</key>
+		<data>
+		in51W5Ei4YIhsHLl7b6z+HVJriA=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/isolate_snapshot_data</key>
 		<data>
 		gLUZUNbndCKs00+ddk9hgePiKHQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		eT56wwndq9V7GviGhS0bcrweUek=
+		9Oj5YNll8jJu2hrXt96ilw+00ug=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -186,19 +190,19 @@
 		</data>
 		<key>Frameworks/flutter_native_splash.framework/Info.plist</key>
 		<data>
-		NnHqgV0BsgRiEyf4YRZtWXuJMSY=
+		nZcmNn1JfCo/VxFaNOmwjnKQYiI=
 		</data>
 		<key>Frameworks/flutter_native_splash.framework/_CodeSignature/CodeResources</key>
 		<data>
-		rhrTWqQ3ByTbJKnVd8FwlTw88JI=
+		AgcIZ0ssAobgayAZtEEy98jOieY=
 		</data>
 		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash</key>
 		<data>
-		5hsYwHIDHRgYDzHxcftwS1C5fVU=
+		Dr2J92etA14ZuYb84fZSsuIDjXQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C9yUYnw+Gwux0AEwVNlL2xYKzh8=
+		O9VVSDQbGF3z766X6+dDtTYl+AQ=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -281,7 +285,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DERHNoP56KVprFzcZSiRwJCdSb6cNvZisdhzQLr51Ls=
+			98yUgkFLuYGbpHW9e4JQKWaW2w23lYIe+RCF5dugEss=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -295,21 +299,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AIz0Sccljjj2Odx0zGTppqI6ixyfqYwuQSu+ojzb4zA=
+			wtAFQBdFZbvM2uG1YAK4R+zTpWZs63QsBMbPwvJUpxM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gvjiqbL6jioSvkz3wt6ReKinrPupboX1X9gHahgN8ww=
+			qMvuncuIRIEQw8pmHoKd8hZ6cSdO2IyCSZdvaSB+VT8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w+cTIW8qyWS2vigEnxCbcCO41RZErPSqdvk+LICCkKA=
+			dPyGfXK0jWAd9QeOPY8H4Lke7oGe061FuvUI5DT+5n8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -340,6 +344,13 @@
 			OSqcWc9laeaV6mtNlulw0cNpAv1VOy9Fih/gGZYVtp0=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/images/ComplianceHUB2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H7qNMKRe+GHF/+ZiP9+EdoXP0az9K2w2nVpVUSC6ye4=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/isolate_snapshot_data</key>
 		<dict>
 			<key>hash2</key>
@@ -351,7 +362,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2gztz8WsbqY/a73R+FXvURWmoRBgmYMTPnsoPuZdLf4=
+			5o4yaAH/A/A/wwey2LDXGLgwGWLc6hWsiDyhv/GQmOk=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -526,21 +537,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DyZmfC9LGmjEvrcU2ci50LP0+LJFyXsV/tttOiI6wpY=
+			eLQBxheDx5jsN2ZNEsLeC5Eu5dF0ErNvk1oyplrB5hU=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_native_splash.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q63jPFJAv8UF4YGNURUTlE084NO72QlJId50XhSI6ro=
+			6vOFtkHYPRzqeri2FyamTdUCdO0XJr1QtbB1PKPqgt4=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N9p/x2eTv/tCVgtmIgsvFERPagbN7z6QX3/uEhR96k8=
+			uXkx9pm+qOkJiYPka2h4sKyQVp8arQ1dbpOFEY2qsyc=
 			</data>
 		</dict>
 	</dict>
