@@ -1,6 +1,12 @@
-// ignore_for_file: file_names
-
-import 'package:compliance/Details/DetailsPage.dart';
+// ignore: file_names
+import 'package:compliance/Details/Flextime.dart';
+import 'package:compliance/Details/GNE.dart';
+import 'package:compliance/Details/InformationManagement.dart';
+import 'package:compliance/Details/LaborManagement.dart';
+import 'package:compliance/Details/SafetyConfirmation.dart';
+import 'package:compliance/Details/SelfInvestment.dart';
+import 'package:compliance/Details/TakingLeave.dart';
+import 'package:compliance/Details/WorkfromHome.dart';
 import 'package:flutter/material.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -32,21 +38,80 @@ class TopPage extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(133, 174, 77, 1),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(top: 16.0), // 上部に余白を追加
+        padding: const EdgeInsets.only(top: 16.0),
         child: ListView.builder(
-          physics: BouncingScrollPhysics(), // スクロールを可能にする
+          physics: const BouncingScrollPhysics(),
           itemCount: complianceItems.length,
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DetailsPage(
-                      itemName: complianceItems[index],
-                    ),
-                  ),
-                );
+                // 各項目に対応する下層ページに遷移
+                switch (index) {
+                  case 0:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LaborManagement(),
+                      ),
+                    );
+                    break;
+                  case 1:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SelfInvestment(),
+                      ),
+                    );
+                    break;
+                  case 2:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => InformationManagement(),
+                      ),
+                    );
+                    break;
+                  case 3:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TakingLeave(),
+                      ),
+                    );
+                    break;
+                  case 4:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => WorkfromHome(),
+                      ),
+                    );
+                    break;
+                  case 5:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Flextime(),
+                      ),
+                    );
+                    break;
+                  case 6:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => GNE(),
+                      ),
+                    );
+                    break;
+                  case 7:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SafetyConfirmation(),
+                      ),
+                    );
+                    break;
+                }
               },
               child: Container(
                 margin: const EdgeInsets.all(8.0),
@@ -57,13 +122,13 @@ class TopPage extends StatelessWidget {
                     width: 2.0,
                   ),
                   borderRadius: BorderRadius.circular(8.0),
-                  color: const Color.fromRGBO(133, 177, 77, 0.5), // 背景色
+                  color: const Color.fromRGBO(133, 177, 77, 0.5),
                 ),
                 child: Center(
                   child: Text(
                     complianceItems[index],
                     style: const TextStyle(
-                      fontSize: 18, // 大きさを調整
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
