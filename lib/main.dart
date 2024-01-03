@@ -1,4 +1,8 @@
-import 'package:compliance/TopPage/TopPage.dart';
+
+import 'package:compliance/Responsive/responsive_layout.dart';
+import 'package:compliance/TopPage/desktop_toppage.dart';
+import 'package:compliance/TopPage/mobile_toppage.dart';
+import 'package:compliance/TopPage/tablet_toppage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,8 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TopPage(),
       debugShowCheckedModeBanner: false,
+      home: ResponsiveLayout(
+        mobileScaffold: MobileTopPage(),
+        tabletScaffold: TabletTopPage(),
+        desktopScaffold: DesktopTopPage(),
+      ),
     );
   }
 }
