@@ -2,7 +2,7 @@
 import 'package:compliance/Details/Flextime.dart';
 import 'package:compliance/Details/GNE.dart';
 import 'package:compliance/Details/InformationManagement.dart';
-import 'package:compliance/Details/LaborManagement/LaborManagement.dart';
+import 'package:compliance/Details/LaborManagement.dart';
 import 'package:compliance/Details/SafetyConfirmation.dart';
 import 'package:compliance/Details/SelfInvestment.dart';
 import 'package:compliance/Details/TakingLeave.dart';
