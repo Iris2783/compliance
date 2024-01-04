@@ -1,4 +1,5 @@
 // ignore_for_file: file_names, use_key_in_widget_constructors
+import 'package:compliance/Parts/LaborManagement/desktop_table_left1.dart';
 import 'package:flutter/material.dart';
 
 class DesktopLaborManagement extends StatelessWidget {
@@ -45,6 +46,8 @@ class DesktopLaborManagement extends StatelessWidget {
                       '労働基準法は、労働基準監督署による監督指導や罰則によって、その履行が確保されます。',
                       style: TextStyle(fontSize: 16),
                     ),
+                    const SizedBox(height: 16),
+                    DesktopTableLeft1(), //法定時間外の表を作成 別フォルダにソースコードあり Parts > LaborManagement > desktop_table_left1.dart
                     const SizedBox(height: 16),
                     Container(
                       decoration: BoxDecoration(
