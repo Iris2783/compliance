@@ -1,5 +1,4 @@
-// TakingLeave.dart
-
+// ignore_for_file: file_names, use_key_in_widget_constructors
 import 'package:flutter/material.dart';
 
 class TakingLeave extends StatelessWidget {
@@ -7,26 +6,19 @@ class TakingLeave extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('休暇取得'),
-      ),
-      body: const Padding(
-        padding: EdgeInsets.all(16.0),
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '休暇取得について',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 8),
-              Text(
-                'サンプルテキスト...',
-                style: TextStyle(fontSize: 16),
-              ),
-            ],
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: const Center(
+          child: Text(
+            '休暇取得',
+            style: TextStyle(color: Colors.white),
           ),
         ),
+        backgroundColor: const Color.fromRGBO(133, 174, 77, 1),
       ),
     );
   }
