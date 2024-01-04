@@ -45,7 +45,6 @@ class MobileTopPage extends StatelessWidget {
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
-                // 各項目に対応する下層ページに遷移
                 switch (index) {
                   case 0:
                     Navigator.push(
