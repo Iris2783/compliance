@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.3.4
+  table: ^0.0.1-dev
 
 flutter_native_splash:
   android: false #androidの時にスプラッシュ画面を表示

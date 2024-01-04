@@ -194,6 +194,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "table",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/table-0.0.1-dev",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "term_glyph",
       "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
       "packageUri": "lib/",
@@ -248,7 +254,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-12-29T05:17:09.576664Z",
+  "generated": "2024-01-04T14:14:19.607710Z",
   "generator": "pub",
   "generatorVersion": "3.1.5"
 }
