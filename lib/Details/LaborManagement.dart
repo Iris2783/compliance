@@ -6,7 +6,18 @@ class LaborManagement extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('労務管理'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: const Center(
+          child: Text(
+            '労務管理',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
         backgroundColor: const Color.fromRGBO(133, 174, 77, 1),
       ),
       body: Padding(
