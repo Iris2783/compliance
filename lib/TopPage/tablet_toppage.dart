@@ -2,11 +2,14 @@
 import 'package:compliance/Details/Flextime.dart';
 import 'package:compliance/Details/GNE.dart';
 import 'package:compliance/Details/InformationManagement.dart';
-import 'package:compliance/Details/LaborManagement.dart';
+import 'package:compliance/Details/LaborManagement/desktop_labormanagement.dart';
+import 'package:compliance/Details/LaborManagement/mobile_labormanagement.dart';
+import 'package:compliance/Details/LaborManagement/tablet_labormanagement.dart';
 import 'package:compliance/Details/SafetyConfirmation.dart';
 import 'package:compliance/Details/SelfInvestment.dart';
 import 'package:compliance/Details/TakingLeave.dart';
 import 'package:compliance/Details/WorkfromHome.dart';
+import 'package:compliance/Responsive/responsive_layout.dart';
 import 'package:flutter/material.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -94,7 +97,11 @@ class TabletTopPage extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => LaborManagement(),
+            builder: (context) => ResponsiveLayout(
+              mobileScaffold: MobileLaborManagement(),
+              tabletScaffold: TabletLaborManagement(),
+              desktopScaffold: DesktopLaborManagement(),
+            ),
           ),
         );
         break;
