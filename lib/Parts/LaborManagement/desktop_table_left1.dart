@@ -6,9 +6,10 @@ class DesktopTableLeft1 extends StatelessWidget {
   Widget build(BuildContext context) {
     // 各行の高さを指定するマップ
     final Map<int, double> rowHeights = {
-      0: 40.0, // ヘッダー行の高さ
+      0: 30.0, // ヘッダー行の高さ
       1: 30.0,
       2: 30.0,
+      3: 30.0,
       // 追加の行の高さを必要に応じて指定 増やしたい場合も簡易的に実装が可能
     };
 
@@ -17,17 +18,21 @@ class DesktopTableLeft1 extends StatelessWidget {
         0: FixedColumnWidth(100.0),
         1: FixedColumnWidth(100.0),
         2: FixedColumnWidth(100.0),
-        3: FixedColumnWidth(100.0),
       },
       border: TableBorder.all(),
       children: [
         buildTableRow(
-          ['Header 1', 'Header 2', 'Header 3', 'Header 4'],
+          [
+            'Header 1',
+            'Header 2',
+            'Header 3',
+          ],
           isHeader: true,
           height: rowHeights[0], // ヘッダー行の高さ
         ),
-        buildTableRow(['Data 1', 'Data 2', 'Data 3', 'Data 4'], height: rowHeights[1]),
-        buildTableRow(['Data 5', 'Data 6', 'Data 7', 'Data 8'], height: rowHeights[2]),
+        buildTableRow(['Data 1', 'Data 2', 'Data 3'], height: rowHeights[1]),
+        buildTableRow(['Data 5', 'Data 6', 'Data 7'], height: rowHeights[2]),
+        buildTableRow(['Data 9', 'Data 10', 'Data 11'], height: rowHeights[3]),
         // 追加の行を必要に応じて追加し、各行の高さを指定
       ],
     );
