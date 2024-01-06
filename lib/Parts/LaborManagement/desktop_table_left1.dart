@@ -5,25 +5,25 @@ class DesktopTableLeft1 extends StatelessWidget {
   final double cellWidth = 100.0;
   final Map<int, double> rowHeights = {
     0: 30.0,
-    1: 30.0,
-    2: 30.0,
-    3: 30.0,
+    1: 50.0,
+    2: 50.0,
+    3: 50.0,
   };
 
   @override
   Widget build(BuildContext context) {
     return Table(
       columnWidths: const {
-        0: FixedColumnWidth(100.0),
-        1: FixedColumnWidth(100.0),
-        2: FixedColumnWidth(100.0),
+        0: FixedColumnWidth(80.0),
+        1: FixedColumnWidth(280.0),
+        2: FixedColumnWidth(280.0),
       },
       border: TableBorder.all(),
       children: [
-        buildTableRow(['Header 1', 'Header 2', 'Header 3'], isHeader: true, height: rowHeights[0]),
-        buildTableRow(['Data 1', 'Data 2', 'Data 3'], height: rowHeights[1]),
-        buildTableRow(['Data 5', 'Data 6', 'Data 7'], height: rowHeights[2]),
-        buildTableRow(['Data 9', 'Data 10', 'Data 11'], height: rowHeights[3]),
+        buildTableRow([' ', '原則', '特別延長申請時'], isHeader: true, height: rowHeights[0]),
+        buildTableRow(['日次', '6時間', '8時間'], height: rowHeights[1]),
+        buildTableRow(['月間', '45時間(ソフトリミット30時間)', '75時間(年6回のみ)'], height: rowHeights[2]),
+        buildTableRow(['年間', '360時間', '720時間'], height: rowHeights[3]),
       ],
     );
   }
@@ -46,8 +46,8 @@ class DesktopTableLeft1 extends StatelessWidget {
                           cellData,
                           style: const TextStyle(
                             color: Colors.white,
-                            // fontWeight: FontWeight.bold,
-                            fontSize: 14.0,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18.0,
                           ),
                         ),
                       ),
@@ -61,8 +61,8 @@ class DesktopTableLeft1 extends StatelessWidget {
                           cellData,
                           style: TextStyle(
                             color: (columnIndex == 0 && !isHeader) ? Colors.white : Colors.black,
-                            fontWeight: FontWeight.normal,
-                            fontSize: 14.0,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18.0,
                           ),
                         ),
                       ),
