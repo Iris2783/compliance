@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.3.4
   table: ^0.0.1-dev
+  google_fonts: ^6.1.0
 
 flutter_native_splash:
   android: false #androidの時にスプラッシュ画面を表示

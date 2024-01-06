@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, use_key_in_widget_constructors
 import 'package:compliance/Parts/LaborManagement/desktop_table_left1.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DesktopLaborManagement extends StatelessWidget {
   @override
@@ -22,7 +23,7 @@ class DesktopLaborManagement extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(133, 177, 77, 1),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(30.0),
         child: SingleChildScrollView(
           child: Row(
             children: [
@@ -31,7 +32,7 @@ class DesktopLaborManagement extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      width: 245.0, // 任意の長さに調整
+                      width: 250.0, // 任意の長さに調整
                       decoration: const BoxDecoration(
                         border: Border(
                           bottom: BorderSide(
@@ -59,120 +60,126 @@ class DesktopLaborManagement extends StatelessWidget {
                     ),
                     const SizedBox(height: 4.0),
                     RichText(
-                      text: const TextSpan(
+                      text: TextSpan(
                         text: '・日に',
-                        style: TextStyle(fontSize: 18, color: Colors.black),
+                        style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black),
                         children: <TextSpan>[
                           TextSpan(
                             text: '6時間以上',
-                            style: TextStyle(fontSize: 18, color: Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold),
+                            style: GoogleFonts.mPlusRounded1c(
+                              fontSize: 18,
+                              color: const Color.fromRGBO(220, 20, 60, 1),
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                           TextSpan(
                             text: 'の時間外勤務をすることはできない',
-                            style: TextStyle(fontSize: 18, color: Colors.black),
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black),
                           ),
                           TextSpan(
                             text: '(フレックス対象者を除く)\n',
-                            style: TextStyle(fontSize: 18, color: Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold),
+                            style: GoogleFonts.mPlusRounded1c(
+                              fontSize: 18,
+                              color: const Color.fromRGBO(220, 20, 60, 1),
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                           TextSpan(
                             text: '・月に',
-                            style: TextStyle(fontSize: 18, color: Colors.black),
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black),
                           ),
                           TextSpan(
                             text: '45時間以上(ソフトリミット30時間)',
-                            style: TextStyle(
+                            style: GoogleFonts.mPlusRounded1c(
                               fontSize: 18,
-                              color: Color.fromRGBO(220, 20, 60, 1), // 45時間以上の色
+                              color: const Color.fromRGBO(220, 20, 60, 1),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           TextSpan(
                             text: 'の時間外勤務をすることはできない\n',
-                            style: TextStyle(fontSize: 18, color: Colors.black),
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black),
                           ),
                           TextSpan(
                             text: '・年に',
-                            style: TextStyle(fontSize: 18, color: Colors.black),
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black),
                           ),
                           TextSpan(
                             text: '360時間以上',
-                            style: TextStyle(
+                            style: GoogleFonts.mPlusRounded1c(
                               fontSize: 18,
-                              color: Color.fromRGBO(220, 20, 60, 1), // 360時間以上の色
+                              color: const Color.fromRGBO(220, 20, 60, 1),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           TextSpan(
                             text: 'の時間外勤務をすることはできない\n',
-                            style: TextStyle(fontSize: 18, color: Colors.black),
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black),
                           ),
                           TextSpan(
                             text: '・超過しそうな場合は、超過する前に速やかに',
-                            style: TextStyle(fontSize: 18, color: Colors.black),
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black),
                           ),
                           TextSpan(
                             text: '特別延長申請',
-                            style: TextStyle(
+                            style: GoogleFonts.mPlusRounded1c(
                               fontSize: 18,
-                              color: Color.fromRGBO(220, 20, 60, 1), // 360時間以上の色
+                              color: const Color.fromRGBO(220, 20, 60, 1),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           TextSpan(
                             text: 'の手続きを実施して下さい\n',
-                            style: TextStyle(fontSize: 18, color: Colors.black),
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black),
                           ),
                         ],
                       ),
                     ),
-                    // const SizedBox(height: 8.0),
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8.0),
                         color: const Color.fromRGBO(133, 177, 77, 0.3),
                       ),
                       padding: const EdgeInsets.all(8.0),
-                      child: const Text(
+                      child: Text(
                         '【上限時間】法定時間外労働',
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                        style: GoogleFonts.mPlusRounded1c(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ),
                     const SizedBox(height: 4),
-                    const Text(
+                    Text(
                       '以下の表は法定労働時間の上限時間一覧です\n'
                       'それぞれの上限時間をしっかりと認識し、適切な労働時間の徹底して下さい',
-                      style: TextStyle(fontSize: 18),
+                      style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
                     const SizedBox(height: 8),
-                    DesktopTableLeft1(), //法定時間外の表を作成 別フォルダにソースコードあり Parts > LaborManagement > desktop_table_left1.dart
-                    const Text(
+                    DesktopTableLeft1(),
+                    Text(
                       '※月間に関しては年間360時間の上限時間を考慮すると、ソフトリミットの30時間が実質的な上限時間となります\n',
-                      style: TextStyle(fontSize: 14, color: Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold),
+                      style: GoogleFonts.mPlusRounded1c(fontSize: 14, color: const Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold),
                     ),
-                    const SizedBox(height: 8.0),
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8.0),
                         color: const Color.fromRGBO(133, 177, 77, 0.3),
                       ),
                       padding: const EdgeInsets.all(8.0),
-                      child: const Text(
+                      child: Text(
                         '休日出勤',
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                        style: GoogleFonts.mPlusRounded1c(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ),
                     const SizedBox(height: 8),
-                    const Text(
+                    Text(
                       '休日出勤(土日、祝日)をする場合は、以下の点を留意して徹底して下さい',
-                      style: TextStyle(fontSize: 18),
+                      style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
                     const SizedBox(height: 4),
-                    const Text(
+                    Text(
                       '・休日出勤をする場合は、必ず事前にWAMSから申請して上席の承認を取得して下さい\n'
                       '・6時間を超えて業務をする場合は、原則その出勤日を含む週に振替休日を取得して下さい\n'
                       '・振替休日を取得しない場合は、法定時間外労働の計上及び出勤日数に影響が出ます',
-                      style: TextStyle(fontSize: 18),
+                      style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
                     const SizedBox(height: 18),
                     // Container(
@@ -181,32 +188,32 @@ class DesktopLaborManagement extends StatelessWidget {
                     //     color: const Color.fromRGBO(133, 177, 77, 0.3),
                     //   ),
                     //   padding: const EdgeInsets.all(8.0),
-                    //   child: const Text(
+                    //   child: Text(
                     //     '',
-                    //     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    //     style: GoogleFonts.mPlusRounded1c(fontSize: 18, fontWeight: FontWeight.bold),
                     //   ),
                     // ),
                     // const SizedBox(height: 8),
-                    // const Text(
+                    // Text(
                     //   'これらの法律については、各都道府県労働局雇用環境・均等部（室）による助言・指導・勧告によって、その履行が確保されます。',
-                    //   style: TextStyle(fontSize: 18),
+                    //   style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     // ),
                   ],
                 ),
               ),
-              const SizedBox(width: 18), // 左右のContainerの間に隙間を追加
+              const SizedBox(width: 18),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 18.0), // 上下左右の余白を調整
+                      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 18.0),
                       child: Container(
                         decoration: const BoxDecoration(
                           border: Border(
                             bottom: BorderSide(
-                              color: Colors.blue, // 下線の色を指定
-                              width: 2.0, // 下線の太さを指定
+                              color: Colors.blue,
+                              width: 2.0,
                             ),
                           ),
                         ),
