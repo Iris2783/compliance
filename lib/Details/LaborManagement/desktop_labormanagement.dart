@@ -179,7 +179,7 @@ class DesktopLaborManagement extends StatelessWidget {
                     Text(
                       '・休日出勤をする場合は、必ず事前にWAMSから申請して上席の承認を取得して下さい。\n'
                       '・6時間を超えて業務をする場合は、原則その出勤日を含む週に振替休日を取得して下さい。\n'
-                      '・振替休日を取得しない場合は、法定時間外労働の計上及び出勤日数に影響が出ます。',
+                      '・振替休日を取得しない場合は、法定時間外労働及び出勤日数の計上に影響が出ます。',
                       style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
                     const SizedBox(height: 18),
@@ -192,7 +192,7 @@ class DesktopLaborManagement extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      width: 250.0, // 任意の長さに調整
+                      width: 210.0, // 任意の長さに調整
                       decoration: const BoxDecoration(
                         border: Border(
                           bottom: BorderSide(
@@ -202,7 +202,7 @@ class DesktopLaborManagement extends StatelessWidget {
                         ),
                       ),
                       child: const Text(
-                        '非管理職向け(SAS以下)',
+                        '管理職向け(VP以上)',
                         style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
                       ),
                     ),
