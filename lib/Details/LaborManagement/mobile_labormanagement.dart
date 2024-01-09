@@ -14,7 +14,7 @@ class MobileLaborManagement extends StatelessWidget {
         ),
         title: const Center(
           child: Text(
-            '労務管理',
+            '労務管理_mobile',
             style: TextStyle(color: Colors.white),
           ),
         ),
