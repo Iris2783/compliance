@@ -16,11 +16,9 @@ class DesktopLaborManagement extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        title: const Center(
-          child: Text(
-            '労務管理_desktop',
-            style: TextStyle(color: Colors.white),
-          ),
+        title: const Text(
+          '労務管理',
+          style: TextStyle(color: Colors.white),
         ),
         backgroundColor: const Color.fromRGBO(133, 177, 77, 1),
       ),
@@ -329,7 +327,7 @@ class DesktopLaborManagement extends StatelessWidget {
                     const SizedBox(height: 8),
                     Text(
                       '以下の表はそれぞれの月間基準労働時間に法定時間外労働の上限値を合算したものです。\n'
-                      'VP以上は以下の上限時間を意識することで、月間の法定時間外労働の違反を防ぐことができます。',
+                      'それぞれの上限時間を意識することで、月間の法定時間外労働の違反を防ぐことができます。',
                       style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
                     const SizedBox(height: 8),
