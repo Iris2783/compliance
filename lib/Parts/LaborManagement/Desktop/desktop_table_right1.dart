@@ -19,7 +19,7 @@ class DesktopTableRight1 extends StatelessWidget {
       border: TableBorder.all(),
       children: [
         buildTableRow([' ', '原則', '特別延長申請時'], isHeader: true, height: rowHeights[0]),
-        buildTableRow(['月次', '80時間(ソフトリミット60時間)', '申請不可(80時間超過禁止)'], height: rowHeights[1]),
+        buildTableRow(['月間', '80時間(ソフトリミット60時間)', '申請不可(80時間超過禁止)'], height: rowHeights[1]),
       ],
     );
   }
