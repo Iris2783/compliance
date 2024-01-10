@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "compliance",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "compliance (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "compliance (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "iPhone SE (3rd)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "1CD4B4EC-B0AF-4789-ABDE-0AB51024A1FD" // flutter devicesで確認した値
+    },
+    {
+      "name": "Desktop_Chrome",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "chrome" // flutter devicesで確認した値
+    }
+  ],
+  "compounds": [
+    {
+      "name": "All Devices", // 追加するコマンドの名前
+      "configurations": [ // 起動に使用する設定を指定する
+        "iPhone SE (3rd)",
+        "Desktop_Chrome",
+      ]
+    }
+  ]
+}
