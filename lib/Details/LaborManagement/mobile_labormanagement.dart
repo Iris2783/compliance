@@ -202,12 +202,12 @@ class MobileLaborManagement extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '・休日出勤をする場合は、必ず事前にWAMSから申請\n'
-                '　して上席の承認を取得して下さい。\n'
+                '・休日出勤をする場合は、必ず事前にWAMSから申\n'
+                '　請して上席の承認を取得して下さい。\n'
                 '・6時間を超えて業務をする場合は、原則その出勤日\n'
                 '　を含む週に振替休日を取得して下さい。\n'
-                '・振替休日を取得しない場合は、法定時間外労働及び\n'
-                '　出勤日数の計上に影響が出ます。',
+                '・振替休日を取得しない場合は、法定時間外労働及\n'
+                '　び出勤日数の計上に影響が出ます。',
                 style: GoogleFonts.mPlusRounded1c(fontSize: 15),
               ),
               const SizedBox(height: 20),
