@@ -2,8 +2,14 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "ansicolor",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/ansicolor-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "archive",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/archive-3.4.6",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/archive-3.4.10",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -39,7 +45,7 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/collection-1.17.2",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -83,7 +89,7 @@
       "name": "flutter",
       "rootUri": "file:///Users/irisawahikaru/development/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "flutter_lints",
@@ -93,7 +99,7 @@
     },
     {
       "name": "flutter_native_splash",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/flutter_native_splash-2.3.4",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/flutter_native_splash-2.3.9",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -101,13 +107,13 @@
       "name": "flutter_test",
       "rootUri": "file:///Users/irisawahikaru/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/irisawahikaru/development/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "google_fonts",
@@ -123,9 +129,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/http-1.1.0",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/http-1.1.2",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "http_parser",
@@ -165,7 +171,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/meta-1.9.1",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/meta-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -177,9 +183,9 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/path_provider-2.1.1",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/path_provider-2.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "path_provider_android",
@@ -201,9 +207,9 @@
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.1.1",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "path_provider_windows",
@@ -213,9 +219,9 @@
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/petitparser-5.4.0",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/petitparser-6.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.2"
     },
     {
       "name": "platform",
@@ -239,7 +245,7 @@
       "name": "sky_engine",
       "rootUri": "file:///Users/irisawahikaru/development/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "source_span",
@@ -249,15 +255,15 @@
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/stack_trace-1.11.0",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/stack_trace-1.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "stream_channel",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/stream_channel-2.1.1",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/stream_channel-2.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.19"
     },
     {
       "name": "string_scanner",
@@ -279,9 +285,9 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/test_api-0.6.0",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/test_api-0.6.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.0"
     },
     {
       "name": "typed_data",
@@ -303,15 +309,15 @@
     },
     {
       "name": "web",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/web-0.1.4-beta",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/web-0.3.0",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "win32",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/win32-5.1.1",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/win32-5.2.0",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "xdg_directories",
@@ -321,9 +327,9 @@
     },
     {
       "name": "xml",
-      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/xml-6.3.0",
+      "rootUri": "file:///Users/irisawahikaru/.pub-cache/hosted/pub.dev/xml-6.5.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.2"
     },
     {
       "name": "yaml",
@@ -338,7 +344,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-01-10T15:40:30.981291Z",
+  "generated": "2024-01-12T01:28:20.925576Z",
   "generator": "pub",
-  "generatorVersion": "3.1.5"
+  "generatorVersion": "3.2.4"
 }
