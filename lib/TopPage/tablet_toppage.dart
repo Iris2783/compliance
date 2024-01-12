@@ -6,7 +6,9 @@ import 'package:compliance/Details/LaborManagement/desktop_labormanagement.dart'
 import 'package:compliance/Details/LaborManagement/mobile_labormanagement.dart';
 import 'package:compliance/Details/LaborManagement/tablet_labormanagement.dart';
 import 'package:compliance/Details/SafetyConfirmation.dart';
-import 'package:compliance/Details/SelfInvestment.dart';
+import 'package:compliance/Details/SelfInvestment/desktop_selfinvestment.dart';
+import 'package:compliance/Details/SelfInvestment/mobile_selfinvestment.dart';
+import 'package:compliance/Details/SelfInvestment/tablet_selfinvestment.dart';
 import 'package:compliance/Details/TakingLeave.dart';
 import 'package:compliance/Details/WorkfromHome.dart';
 import 'package:compliance/Responsive/responsive_layout.dart';
@@ -109,7 +111,11 @@ class TabletTopPage extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SelfInvestment(),
+            builder: (context) => ResponsiveLayout(
+              mobileScaffold: MobileSelfInvestment(),
+              tabletScaffold: TabletSelfInvestment(),
+              desktopScaffold: DesktopSelfInvestment(),
+            ),
           ),
         );
         break;
