@@ -1,4 +1,5 @@
 // ignore_for_file: file_names, use_key_in_widget_constructors
+//Mobileと同じUIにしている。リリース後に不備があれば対応予定。
 import 'package:compliance/Parts/LaborManagement/Mobile/mobile_table1.dart';
 import 'package:compliance/Parts/LaborManagement/Mobile/mobile_table2.dart';
 import 'package:compliance/Parts/LaborManagement/Mobile/mobile_table3.dart';
@@ -17,7 +18,7 @@ class TabletLaborManagement extends StatelessWidget {
           },
         ),
         title: const Text(
-          '労務管理_Tablet',
+          '労務管理',
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
         backgroundColor: const Color.fromRGBO(133, 177, 77, 1),
