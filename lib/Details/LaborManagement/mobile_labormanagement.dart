@@ -141,11 +141,6 @@ class MobileLaborManagement extends StatelessWidget {
                       style: GoogleFonts.mPlusRounded1c(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  const SizedBox(height: 8),
-                  Text(
-                    '休日出勤(土日、祝日)をする場合は、以下の点に留意して徹底して下さい。',
-                    style: GoogleFonts.mPlusRounded1c(fontSize: 1),
-                  ),
                   const SizedBox(height: 4),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -279,7 +274,7 @@ class MobileLaborManagement extends StatelessWidget {
                       style: GoogleFonts.mPlusRounded1c(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 4),
                   Text(
                     '以下の表はそれぞれの月間基準労働時間に法定時間外労働の上限値を合算したものです。\n'
                     'それぞれの上限時間を意識することで、月間の法定時間外労働の違反を防ぐことができます。',
