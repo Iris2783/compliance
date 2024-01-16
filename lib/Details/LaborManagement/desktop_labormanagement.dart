@@ -128,7 +128,7 @@ class DesktopLaborManagement extends StatelessWidget {
                         TextParts3(
                           bulletPoint3: '※',
                           textParts3: [
-                            TextSpan3(
+                            TextPart3(
                                 text: '月間に関しては年間360時間の上限時間を考慮すると、ソフトリミットの30時間が実質的な上限となります。',
                                 style: GoogleFonts.mPlusRounded1c(fontSize: 15, color: const Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold)),
                           ],
@@ -277,7 +277,7 @@ class DesktopLaborManagement extends StatelessWidget {
                     TextParts3(
                       bulletPoint3: '※',
                       textParts3: [
-                        TextSpan3(
+                        TextPart3(
                             text: '月間80時間を超えた場合は、社内規定に則り医師との面談が義務付けられています。', style: GoogleFonts.mPlusRounded1c(fontSize: 15, color: const Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold)),
                       ],
                     ),

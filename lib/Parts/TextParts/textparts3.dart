@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class TextParts3 extends StatelessWidget {
   final String bulletPoint3;
-  final List<TextSpan3> textParts3;
+  final List<TextPart3> textParts3;
 
   TextParts3({Key? key, required this.bulletPoint3, required this.textParts3}) : super(key: key);
 
@@ -25,9 +25,9 @@ class TextParts3 extends StatelessWidget {
   }
 }
 
-class TextSpan3 {
+class TextPart3 {
   final String text;
   final TextStyle style;
 
-  TextSpan3({required this.text, required this.style});
+  TextPart3({required this.text, required this.style});
 }
