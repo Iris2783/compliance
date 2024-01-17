@@ -1,7 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 import 'package:flutter/material.dart';
 
-class DesktopTableRight1 extends StatelessWidget {
+class DesktopTableRight1LM extends StatelessWidget {
   final double cellWidth = 100.0;
   final Map<int, double> rowHeights = {
     0: 30.0,
