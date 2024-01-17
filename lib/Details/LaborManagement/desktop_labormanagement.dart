@@ -25,7 +25,7 @@ class DesktopLaborManagement extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(133, 177, 77, 1),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding: const EdgeInsets.all(25.0),
         child: SingleChildScrollView(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start, //左右のContainerの開始位置を揃える。
@@ -120,7 +120,7 @@ class DesktopLaborManagement extends StatelessWidget {
                       style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
                     const SizedBox(height: 8),
-                    DesktopTableLeft1(), //非管理症向け法定時間外労働の表 Parts > LaborManagement > Desktop > desktop_table_left1.dart
+                    DesktopTableLeft1LM(), //非管理症向け法定時間外労働の表 Parts > LaborManagement > Desktop > desktop_table_left1.dart
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -272,7 +272,7 @@ class DesktopLaborManagement extends StatelessWidget {
                       style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
                     const SizedBox(height: 8),
-                    DesktopTableRight1(), //管理職向け法定時間外労働の表 Parts > LaborManagement > Desktop > desktop_table_right1.dart
+                    DesktopTableRight1LM(), //管理職向け法定時間外労働の表 Parts > LaborManagement > Desktop > desktop_table_right1.dart
                     //TextParts3 : Parts > Textparts > textparts3.dart デスクトップにて表に補足をつけるときに使うインスタンス
                     TextParts3(
                       bulletPoint3: '※',
@@ -300,7 +300,7 @@ class DesktopLaborManagement extends StatelessWidget {
                       style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
                     const SizedBox(height: 8),
-                    DesktopTableRight2(), //管理職向け総労働時間表 Parts > LaborManagement > Desktop > desktop_table_right2.dart
+                    DesktopTableRight2LM(), //管理職向け総労働時間表 Parts > LaborManagement > Desktop > desktop_table_right2.dart
                   ],
                 ),
               ),
