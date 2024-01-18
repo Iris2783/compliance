@@ -142,7 +142,7 @@ class DesktopSelfInvestment extends StatelessWidget {
                             TextPart1(text: 'やむを得ない事情', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: const Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold)),
                             TextPart1(text: 'の場合は、', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black)),
                             TextPart1(text: '部長承認のもと', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: const Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold)),
-                            TextPart1(text: '継続して他証券口座を保有することができます。', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black)),
+                            TextPart1(text: '継続して他証券口座を保持することができます。', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black)),
                           ],
                         ),
                         const SizedBox(height: 3),
@@ -160,7 +160,7 @@ class DesktopSelfInvestment extends StatelessWidget {
                         TextParts1(
                           bulletPoint1: '・',
                           textParts1: [
-                            TextPart1(text: '継続して保有する場合は、', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black)),
+                            TextPart1(text: '継続して保持する場合は、', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black)),
                             TextPart1(
                                 text: '速やかに社員投資承認システムに登録(保有資産の残高証明登録も必須)', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: const Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold)),
                             TextPart1(text: 'をして下さい。', style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: Colors.black)),
@@ -239,7 +239,7 @@ class DesktopSelfInvestment extends StatelessWidget {
                     ),
                     const SizedBox(height: 5),
                     Text(
-                      '口座登録情報に変更があった場合は速やかに変更手続きを行なって下さい。\n'
+                      '口座登録情報に変更があった場合は、速やかに変更手続きを行なって下さい。\n'
                       '以下の表はよく変更手続きが漏れている項目です。',
                       style: GoogleFonts.mPlusRounded1c(fontSize: 18),
                     ),
@@ -267,10 +267,21 @@ class DesktopSelfInvestment extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 4),
-                    Text(
-                      '当該システムには保有している証券口座情報を正確に登録しなければいけません。\n'
-                      '以下の表に基づいて登録漏れがないようにしてください。',
-                      style: GoogleFonts.mPlusRounded1c(fontSize: 18),
+                    Text.rich(
+                      TextSpan(
+                        text: '当該システムには保有している証券口座情報を正確に登録しなければいけません。\n以下の口座情報及び',
+                        style: GoogleFonts.mPlusRounded1c(fontSize: 18),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: '誓約の登録',
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18, color: const Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold),
+                          ),
+                          TextSpan(
+                            text: 'も漏れなく実施してください。',
+                            style: GoogleFonts.mPlusRounded1c(fontSize: 18),
+                          ),
+                        ],
+                      ),
                     ),
                     const SizedBox(height: 5),
                     DesktopTableRight3SI(), //社員投資承認システムへの登録内容表 Parts > SelfInvestment > Desktop > desktop_table_right3.dart

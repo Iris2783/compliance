@@ -109,14 +109,14 @@ class TabletLaborManagement extends StatelessWidget {
                   style: GoogleFonts.mPlusRounded1c(fontSize: 15, fontWeight: FontWeight.bold),
                 ),
               ),
-              const SizedBox(height: 4),
+              const SizedBox(height: 5),
               Text(
                 '以下の表は法定時間外労働の上限時間一覧です。\n'
                 'それぞれの上限時間をしっかりと認識し、適切な労働時間の確保を徹底して下さい。',
                 style: GoogleFonts.mPlusRounded1c(fontSize: 15),
               ),
               const SizedBox(height: 8),
-              MobileTable1(), //非管理症向け法定時間外労働の表 Parts > LaborManagement > Mobile > mobile_table1.dart
+              MobileTable1LM(), //非管理症向け法定時間外労働の表 Parts > LaborManagement > Mobile > mobile_table1.dart
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -258,7 +258,7 @@ class TabletLaborManagement extends StatelessWidget {
                     style: GoogleFonts.mPlusRounded1c(fontSize: 15),
                   ),
                   const SizedBox(height: 8),
-                  MobileTable2(), //管理職向け法定時間外労働の表 Parts > LaborManagement > Mobile > mobile_table2.dart
+                  MobileTable2LM(), //管理職向け法定時間外労働の表 Parts > LaborManagement > Mobile > mobile_table2.dart
                   //TextParts2 : Parts > Textparts > textparts2.dart モバイル及びタブレットにて表に補足をつけるときに使うインスタンス
                   TextParts2(
                     bulletPoint2: '※',
@@ -286,7 +286,7 @@ class TabletLaborManagement extends StatelessWidget {
                     style: GoogleFonts.mPlusRounded1c(fontSize: 15),
                   ),
                   const SizedBox(height: 8),
-                  MobileTable3(), //管理職向け総労働時間表 Parts > LaborManagement > Mobile > mobile_table3.dart
+                  MobileTable3LM(), //管理職向け総労働時間表 Parts > LaborManagement > Mobile > mobile_table3.dart
                 ],
               ),
             ],
