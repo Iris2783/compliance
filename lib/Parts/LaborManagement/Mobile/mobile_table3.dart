@@ -1,7 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 import 'package:flutter/material.dart';
 
-class MobileTable3 extends StatelessWidget {
+class MobileTable3LM extends StatelessWidget {
   final double cellWidth = 100.0;
   final Map<int, double> rowHeights = {
     0: 25.0,
@@ -60,12 +60,15 @@ class MobileTable3 extends StatelessWidget {
                       width: cellWidth,
                       height: height,
                       child: Center(
-                        child: Text(
-                          cellData,
-                          style: TextStyle(
-                            color: (columnIndex == 0 && !isHeader) ? Colors.white : Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15.0,
+                        child: Padding(
+                          padding: const EdgeInsets.all(2.0),
+                          child: Text(
+                            cellData,
+                            style: TextStyle(
+                              color: (columnIndex == 0 && !isHeader) ? Colors.white : Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15.0,
+                            ),
                           ),
                         ),
                       ),
