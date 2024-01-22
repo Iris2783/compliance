@@ -32,7 +32,7 @@ class DesktopLaborManagement extends StatelessWidget {
           children: [
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.only(top: 30.0, left: 70.0),
+                padding: const EdgeInsets.only(top: 25.0, left: 70.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
