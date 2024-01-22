@@ -11,12 +11,18 @@ class TextParts1 extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(bulletPoint1, style: const TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold)),
+        Text(bulletPoint1,
+            style: const TextStyle(
+                fontSize: 20,
+                color: Colors.black,
+                fontWeight: FontWeight.bold)),
         // const SizedBox(width: 5),
         Expanded(
           child: RichText(
             text: TextSpan(
-              children: textParts1.map((part) => TextSpan(text: part.text, style: part.style)).toList(),
+              children: textParts1
+                  .map((part) => TextSpan(text: part.text, style: part.style))
+                  .toList(),
             ),
           ),
         ),
