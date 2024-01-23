@@ -14,18 +14,21 @@ class DesktopTableRight1SI extends StatelessWidget {
     return Table(
       columnWidths: const {
         0: FixedColumnWidth(120.0),
-        1: FixedColumnWidth(630.0),
+        1: FixedColumnWidth(740.0),
       }, //列の幅を指定
       border: TableBorder.all(),
       children: [
-        buildTableRow(['投資決定', '社員が売買の如何に関わらず家族の取引の投資決定に関与する場合。'], height: rowHeights[0]),
-        buildTableRow(['発注', '社員が家族の取引の発注に関与(取引の代替等)する場合。'], height: rowHeights[1]),
+        buildTableRow(['投資決定', '社員が売買の如何に関わらず家族の取引の投資決定に関与する場合。'],
+            height: rowHeights[0]),
+        buildTableRow(['発注', '社員が家族の取引の発注に関与(取引の代替等)する場合。'],
+            height: rowHeights[1]),
         buildTableRow(['受渡精算', '社員が家族の取引の受渡精算に関与する場合。'], height: rowHeights[2]),
       ],
     );
   }
 
-  TableRow buildTableRow(List<String> rowData, {bool isHeader = false, double? height}) {
+  TableRow buildTableRow(List<String> rowData,
+      {bool isHeader = false, double? height}) {
     return TableRow(
       children: rowData.asMap().entries.map(
         (entry) {
@@ -44,22 +47,26 @@ class DesktopTableRight1SI extends StatelessWidget {
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18.0,
+                            fontSize: 20.0,
                           ),
                         ),
                       ),
                     )
                   : Container(
-                      color: (columnIndex == 0 && !isHeader) ? const Color.fromRGBO(133, 177, 77, 1) : null,
+                      color: (columnIndex == 0 && !isHeader)
+                          ? const Color.fromRGBO(133, 177, 77, 1)
+                          : null,
                       width: cellWidth,
                       height: height,
                       child: Center(
                         child: Text(
                           cellData,
                           style: TextStyle(
-                            color: (columnIndex == 0 && !isHeader) ? Colors.white : Colors.black,
+                            color: (columnIndex == 0 && !isHeader)
+                                ? Colors.white
+                                : Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18.0,
+                            fontSize: 20.0,
                           ),
                         ),
                       ),
