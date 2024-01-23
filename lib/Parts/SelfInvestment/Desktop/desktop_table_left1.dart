@@ -14,22 +14,25 @@ class DesktopTableLeft1SI extends StatelessWidget {
   Widget build(BuildContext context) {
     return Table(
       columnWidths: const {
-        0: FixedColumnWidth(160.0),
-        1: FixedColumnWidth(205.0),
-        2: FixedColumnWidth(205.0),
-        3: FixedColumnWidth(205.0),
+        0: FixedColumnWidth(180.0),
+        1: FixedColumnWidth(235.0),
+        2: FixedColumnWidth(235.0),
+        3: FixedColumnWidth(235.0),
       }, //列の幅を指定
       border: TableBorder.all(),
       children: [
-        buildTableRow([' ', '口座開設', '口座保持', '取引'], isHeader: true, height: rowHeights[0]),
+        buildTableRow([' ', '口座開設', '口座保持', '取引'],
+            isHeader: true, height: rowHeights[0]),
         buildTableRow(['野村證券(本店)', '○', '○', '○(制限あり)'], height: rowHeights[1]),
         buildTableRow(['野村證券(他支店)', '×', '×', '×'], height: rowHeights[2]),
-        buildTableRow(['他証券口座', '× (例外あり)', '× (例外あり)', '×'], height: rowHeights[3]),
+        buildTableRow(['他証券口座', '× (例外あり)', '× (例外あり)', '×'],
+            height: rowHeights[3]),
       ],
     );
   }
 
-  TableRow buildTableRow(List<String> rowData, {bool isHeader = false, double? height}) {
+  TableRow buildTableRow(List<String> rowData,
+      {bool isHeader = false, double? height}) {
     return TableRow(
       children: rowData.asMap().entries.map(
         (entry) {
@@ -48,22 +51,26 @@ class DesktopTableLeft1SI extends StatelessWidget {
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18.0,
+                            fontSize: 20.0,
                           ),
                         ),
                       ),
                     )
                   : Container(
-                      color: (columnIndex == 0 && !isHeader) ? const Color.fromRGBO(133, 177, 77, 1) : null,
+                      color: (columnIndex == 0 && !isHeader)
+                          ? const Color.fromRGBO(133, 177, 77, 1)
+                          : null,
                       width: cellWidth,
                       height: height,
                       child: Center(
                         child: Text(
                           cellData,
                           style: TextStyle(
-                            color: (columnIndex == 0 && !isHeader) ? Colors.white : Colors.black,
+                            color: (columnIndex == 0 && !isHeader)
+                                ? Colors.white
+                                : Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18.0,
+                            fontSize: 20.0,
                           ),
                         ),
                       ),
