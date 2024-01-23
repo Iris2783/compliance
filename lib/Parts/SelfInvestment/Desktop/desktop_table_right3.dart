@@ -16,13 +16,14 @@ class DesktopTableRight3SI extends StatelessWidget {
   Widget build(BuildContext context) {
     return Table(
       columnWidths: const {
-        0: FixedColumnWidth(180.0),
-        1: FixedColumnWidth(285.0),
-        2: FixedColumnWidth(285.0),
+        0: FixedColumnWidth(200.0),
+        1: FixedColumnWidth(330.0),
+        2: FixedColumnWidth(330.0),
       }, //列の幅を指定
       border: TableBorder.all(),
       children: [
-        buildTableRow([' ', '登録要否', '備考'], isHeader: true, height: rowHeights[0]),
+        buildTableRow([' ', '登録要否', '備考'],
+            isHeader: true, height: rowHeights[0]),
         buildTableRow(['口座未保有', '必須', '保有していない旨の登録も必須'], height: rowHeights[1]),
         buildTableRow(['野村證券口座', '必須', '-'], height: rowHeights[2]),
         buildTableRow(['他証券口座', '必須', '保有資産の残高証明登録も必須'], height: rowHeights[3]),
@@ -32,7 +33,8 @@ class DesktopTableRight3SI extends StatelessWidget {
     );
   }
 
-  TableRow buildTableRow(List<String> rowData, {bool isHeader = false, double? height}) {
+  TableRow buildTableRow(List<String> rowData,
+      {bool isHeader = false, double? height}) {
     return TableRow(
       children: rowData.asMap().entries.map(
         (entry) {
@@ -51,22 +53,26 @@ class DesktopTableRight3SI extends StatelessWidget {
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18.0,
+                            fontSize: 20.0,
                           ),
                         ),
                       ),
                     )
                   : Container(
-                      color: (columnIndex == 0 && !isHeader) ? const Color.fromRGBO(133, 177, 77, 1) : null,
+                      color: (columnIndex == 0 && !isHeader)
+                          ? const Color.fromRGBO(133, 177, 77, 1)
+                          : null,
                       width: cellWidth,
                       height: height,
                       child: Center(
                         child: Text(
                           cellData,
                           style: TextStyle(
-                            color: (columnIndex == 0 && !isHeader) ? Colors.white : Colors.black,
+                            color: (columnIndex == 0 && !isHeader)
+                                ? Colors.white
+                                : Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18.0,
+                            fontSize: 20.0,
                           ),
                         ),
                       ),
