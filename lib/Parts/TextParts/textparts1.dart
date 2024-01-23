@@ -1,22 +1,28 @@
 import 'package:flutter/material.dart';
 
-class TextParts2 extends StatelessWidget {
-  final String bulletPoint2;
-  final List<TextPart2> textParts2;
+class TextParts1 extends StatelessWidget {
+  final String bulletPoint1;
+  final List<TextPart1> textParts1;
 
-  TextParts2({Key? key, required this.bulletPoint2, required this.textParts2}) : super(key: key);
+  TextParts1({super.key, required this.bulletPoint1, required this.textParts1});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(bulletPoint2, style: const TextStyle(fontSize: 12, color: Color.fromRGBO(220, 20, 60, 1), fontWeight: FontWeight.bold)),
-        const SizedBox(width: 3),
+        Text(bulletPoint1,
+            style: const TextStyle(
+                fontSize: 20,
+                color: Colors.black,
+                fontWeight: FontWeight.bold)),
+        // const SizedBox(width: 5),
         Expanded(
           child: RichText(
             text: TextSpan(
-              children: textParts2.map((segment) => TextSpan(text: segment.text, style: segment.style)).toList(),
+              children: textParts1
+                  .map((part) => TextSpan(text: part.text, style: part.style))
+                  .toList(),
             ),
           ),
         ),
@@ -25,9 +31,9 @@ class TextParts2 extends StatelessWidget {
   }
 }
 
-class TextPart2 {
+class TextPart1 {
   final String text;
   final TextStyle style;
 
-  TextPart2({required this.text, required this.style});
+  TextPart1({required this.text, required this.style});
 }
