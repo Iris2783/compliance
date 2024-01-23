@@ -1,5 +1,4 @@
 // ignore_for_file: file_names
-import 'package:compliance/Details/Flextime.dart';
 import 'package:compliance/Details/GNE.dart';
 import 'package:compliance/Details/InformationManagement.dart';
 import 'package:compliance/Details/LaborManagement/desktop_labormanagement.dart';
@@ -9,7 +8,6 @@ import 'package:compliance/Details/SafetyConfirmation.dart';
 import 'package:compliance/Details/SelfInvestment/desktop_selfinvestment.dart';
 import 'package:compliance/Details/SelfInvestment/mobile_selfinvestment.dart';
 import 'package:compliance/Details/SelfInvestment/tablet_selfinvestment.dart';
-import 'package:compliance/Details/TakingLeave.dart';
 import 'package:compliance/Details/WorkfromHome.dart';
 import 'package:compliance/Responsive/responsive_layout.dart';
 import 'package:flutter/material.dart';
@@ -20,10 +18,8 @@ class DesktopTopPage extends StatelessWidget {
     '労務管理',
     '社員投資',
     '情報管理',
-    '休暇取得',
-    '在宅勤務',
-    'フレックスタイム制度',
     '受贈簿・社外交流簿',
+    '在宅勤務',
     '安否確認システム',
   ];
 
@@ -131,7 +127,7 @@ class DesktopTopPage extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => TakingLeave(),
+            builder: (context) => GNE(),
           ),
         );
         break;
@@ -144,22 +140,6 @@ class DesktopTopPage extends StatelessWidget {
         );
         break;
       case 5:
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => Flextime(),
-          ),
-        );
-        break;
-      case 6:
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => GNE(),
-          ),
-        );
-        break;
-      case 7:
         Navigator.push(
           context,
           MaterialPageRoute(
