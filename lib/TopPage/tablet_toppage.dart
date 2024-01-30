@@ -4,7 +4,9 @@ import 'package:compliance/Details/InformationManagement.dart';
 import 'package:compliance/Details/LaborManagement/desktop_labormanagement.dart';
 import 'package:compliance/Details/LaborManagement/mobile_labormanagement.dart';
 import 'package:compliance/Details/LaborManagement/tablet_labormanagement.dart';
-import 'package:compliance/Details/SafetyConfirmation.dart';
+import 'package:compliance/Details/SafetyConfirmation/desktop_safetyconfirmation.dart';
+import 'package:compliance/Details/SafetyConfirmation/mobile_safetyconfirmation.dart';
+import 'package:compliance/Details/SafetyConfirmation/tablet.safetyconfirmation.dart';
 import 'package:compliance/Details/SelfInvestment/desktop_selfinvestment.dart';
 import 'package:compliance/Details/SelfInvestment/mobile_selfinvestment.dart';
 import 'package:compliance/Details/SelfInvestment/tablet_selfinvestment.dart';
@@ -143,8 +145,12 @@ class TabletTopPage extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SafetyConfirmation(),
-          ),
+                        builder: (context) => ResponsiveLayout(
+                          mobileScaffold: MobileSafetyConfirmation(),
+                          tabletScaffold: TabletSafetyConfirmation(),
+                          desktopScaffold: DesktopSafetyConfirmation(),
+                        ),
+                      ),
         );
         break;
     }
